@@ -40,6 +40,7 @@ Should have next:
 - transcript snippet extractor by timestamp,
 - topic-to-chapter matcher,
 - cleaned evidence export folder generator.
+- OpenCLI capture workflow for Smart Summary, Smart Chapters, transcript URLs, page metadata, and recording screenshots.
 
 Could have later:
 
@@ -83,6 +84,6 @@ Required:
 Optional:
 
 - `ffmpeg` for direct frame extraction,
-- OpenCLI or another browser automation layer,
+- OpenCLI or another browser automation layer for logged-in pages,
 - OCR tool for image-like PDFs/slides,
 - optional external study tools for review, if useful.

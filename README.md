@@ -161,4 +161,5 @@ formula keywords
 - [Component requirements](docs/components.md)
 - [Workflow](docs/workflow.md)
 - [Memory system](docs/memory-system.md)
+- [OpenCLI workflow](docs/opencli-workflow.md)
 - [GitHub publishing notes](docs/github-notes.md)

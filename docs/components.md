@@ -138,3 +138,31 @@ Important:
 
 - Export is optional. The local bundle and course memory are the source of truth.
 - Do not export private recordings, restricted PDFs, or screenshots unless rights allow it.
+
+## 9. Browser Automation Layer
+
+Purpose: automate capture from logged-in recording pages.
+
+Recommended implementation:
+
+- OpenCLI, or another browser automation tool with an authenticated browser profile.
+
+Required captures when available:
+
+- page title,
+- source URL,
+- platform session date,
+- recording duration,
+- Smart Summary,
+- Smart Chapters / chapter time ranges,
+- transcript VTT URL or transcript text,
+- current playback timestamp,
+- current visible frame/screenshot,
+- visible instructor annotations.
+
+Important:
+
+- The user must log in manually.
+- Do not ask for or store credentials.
+- Browser automation is optional; manual download/copy fallback must remain supported.
+- See `docs/opencli-workflow.md`.

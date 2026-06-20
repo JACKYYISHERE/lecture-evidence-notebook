@@ -19,6 +19,8 @@ smart_summary.md
 smart_chapters.json
 ```
 
+If the recording page is web-based and requires login, OpenCLI can capture page metadata, Smart Summary, Smart Chapters, transcript URLs, and screenshots from the user's already-authenticated browser session. See `docs/opencli-workflow.md`.
+
 4. Convert transcript:
 
 ```bash

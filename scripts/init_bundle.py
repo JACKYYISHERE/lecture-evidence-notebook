@@ -46,7 +46,7 @@ def main() -> int:
         "source_url": args.source_url,
         "created_at": datetime.now(timezone.utc).isoformat(),
         "duration": "",
-        "notes": "Keep private media and restricted learning materials local. Do not commit this bundle unless rights allow it.",
+        "notes": "This bundle is local working data for the user's own learning materials.",
         "files": {
             "recording": "recording.mp4",
             "audio": "recording_audio.m4a",

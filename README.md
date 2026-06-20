@@ -20,9 +20,9 @@ Many learning sessions have the important material split across different places
 
 Most AI note tools handle only one or two of these. This project keeps them together in a local bundle.
 
-## What Goes On GitHub
+## Repo vs Local Data
 
-Commit this repository:
+This repository contains reusable tooling and templates:
 
 - scripts,
 - schemas,
@@ -30,16 +30,16 @@ Commit this repository:
 - workflow docs,
 - empty/sample memory files.
 
-Do **not** commit private or copyrighted course assets:
+Each user brings their own local learning materials:
 
 - recordings,
 - platform transcripts,
 - slide PDFs,
-- screenshots containing copyrighted class or workshop materials,
-- learner/instructor/session identifiers,
-- paid or restricted educational content.
+- screenshots,
+- Smart Summary / chapter exports,
+- course memory.
 
-The `.gitignore` is set up to keep real lecture bundles and media out of Git.
+Those files live in local bundle folders such as `local_bundles/`. A different user or AI agent should clone the repo, then create their own local bundles with their own materials.
 
 ## Core Workflow
 
@@ -56,14 +56,14 @@ The `.gitignore` is set up to keep real lecture bundles and media out of Git.
 ```text
 lecture_bundle/
   manifest.json
-  recording.mp4              # ignored by Git
-  recording_audio.m4a         # ignored by Git
-  transcript.vtt              # ignored by Git by default
-  transcript.md               # ignored by Git by default
-  slides.pdf                  # ignored by Git
-  smart_summary.md            # optional, ignored if private
-  smart_chapters.json         # optional, ignored if private
-  frames/                     # screenshots, ignored by Git
+  recording.mp4              # local user material
+  recording_audio.m4a         # local user material
+  transcript.vtt              # local user material
+  transcript.md               # generated local transcript
+  slides.pdf                  # local user material
+  smart_summary.md            # optional local platform export
+  smart_chapters.json         # optional local platform export
+  frames/                     # local screenshots
   notes/
     annotation_notes.md
     screenshot_index.md
@@ -77,6 +77,22 @@ course_memory/
 ```
 
 ## Quick Start
+
+Clone the repo:
+
+```bash
+git clone https://github.com/JACKYYISHERE/lecture-evidence-notebook.git
+cd lecture-evidence-notebook
+```
+
+For another AI agent, start here:
+
+```text
+Read README.md first.
+Then read docs/workflow.md and docs/opencli-workflow.md.
+Use scripts/init_bundle.py to create a local bundle.
+Put the user's own recordings, transcripts, slides, and screenshots into that local bundle.
+```
 
 Create a local bundle:
 
@@ -157,6 +173,7 @@ formula keywords
 
 ## Docs
 
+- [Agent quick start](docs/agent-quick-start.md)
 - [Product spec](docs/product-spec.md)
 - [Component requirements](docs/components.md)
 - [Workflow](docs/workflow.md)

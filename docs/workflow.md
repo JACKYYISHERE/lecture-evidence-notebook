@@ -6,7 +6,7 @@
 2. Create bundle:
 
 ```bash
-python3 scripts/init_bundle.py --course "Course Name" --lecture "lecture-slug" --out ./local_bundles
+python3 scripts/init_bundle.py --course "Course or Project Name" --lecture "session-slug" --out ./local_bundles
 ```
 
 3. Copy private files into the bundle:
@@ -22,7 +22,7 @@ smart_chapters.json
 4. Convert transcript:
 
 ```bash
-python3 scripts/vtt_to_markdown.py ./local_bundles/lecture-slug/transcript.vtt --out-dir ./local_bundles/lecture-slug
+python3 scripts/vtt_to_markdown.py ./local_bundles/session-slug/transcript.vtt --out-dir ./local_bundles/session-slug
 ```
 
 5. Update `manifest.json` with source URL, date, duration, and slide reference.
@@ -55,7 +55,7 @@ smart chapter range -> transcript cue -> nearby recording frames
 Refer to screenshot: 042950_two_deposits_security_vs_free.png
 Recording: 04:29:50
 Transcript: 04:29:50 - 04:30:01
-Slide/page: Interest Income
+Slide/page: slides.pdf page X
 ```
 
 ## C. Add To Memory
@@ -65,7 +65,7 @@ Add a reusable example:
 ```json
 {
   "id": "example-id",
-  "course": "Course name",
+  "course": "Course or project name",
   "topic": "Topic",
   "identity": "Short human-readable example identity",
   "recording_time": "HH:MM:SS",
@@ -100,6 +100,6 @@ slides.pdf if sharing rights allow
 
 Avoid uploading:
 
-- full private recordings,
-- paid course PDFs without permission,
-- raw transcripts if they contain private student names or sensitive discussion.
+- full private or restricted recordings,
+- paid or restricted PDFs without permission,
+- raw transcripts if they contain private participant names or sensitive discussion.

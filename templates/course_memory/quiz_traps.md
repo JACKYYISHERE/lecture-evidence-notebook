@@ -3,7 +3,6 @@
 ## Topic
 
 - Trap:
-- Why students get it wrong:
+- Why learners get it wrong:
 - Correct handling:
 - Evidence:
-

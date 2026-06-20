@@ -13,13 +13,13 @@ Safe:
 
 Usually unsafe:
 
-- course recordings,
-- Zoom transcripts,
-- PDFs/slides from paid courses,
-- screenshots of professor slides,
-- student names,
+- class, workshop, or meeting recordings,
+- platform transcripts,
+- PDFs/slides from paid or restricted sessions,
+- screenshots of instructor slides,
+- participant names,
 - platform links with access tokens,
-- downloaded Smart Summary content if it contains course material.
+- downloaded summary content if it contains restricted educational material.
 
 ## Recommended Repository Settings
 
@@ -35,7 +35,7 @@ For private GitHub:
 - still avoid uploading large recordings,
 - still check course copyright rules,
 - consider Git LFS only if you truly need media versioning,
-- avoid committing signed Zoom URLs.
+- avoid committing signed recording URLs or access tokens.
 
 ## Before First Commit
 
@@ -60,6 +60,5 @@ frames/
 ## Suggested Repo Description
 
 ```text
-Local-first lecture evidence notebook: sync recordings, transcripts, slides, and classroom annotations into exam-ready study notes.
+Local-first evidence notebook: sync recordings, transcripts, slides, and instructor annotations into traceable study notes.
 ```
-

@@ -2,14 +2,14 @@
 
 ## 1. Lecture Bundle Manager
 
-Purpose: create and maintain one local folder per lecture.
+Purpose: create and maintain one local folder per recorded session.
 
 Required:
 
 - create standard folder structure,
 - store `manifest.json`,
-- record course name, lecture name, date, source URL, duration, and file paths,
-- never assume Finder download time is the lecture date.
+- record course/project name, session name, date, source URL, duration, and file paths,
+- never assume Finder download time is the session date.
 
 Inputs:
 
@@ -69,13 +69,13 @@ Required:
 
 Principle:
 
-- slides/PDF define the rule,
-- transcript explains the rule,
-- recording frames capture classroom additions.
+- slides/PDF define the formal material,
+- transcript explains the material,
+- recording frames capture instructor additions.
 
 ## 5. Recording Frame Extractor
 
-Purpose: recover professor annotations and screen context.
+Purpose: recover instructor annotations and screen context.
 
 Required:
 
@@ -119,7 +119,7 @@ Required output:
 - slide/page reference,
 - transcript cue,
 - rule,
-- professor annotation,
+- instructor annotation,
 - exam answer,
 - trap,
 - memory line.
@@ -137,4 +137,4 @@ Required:
 Important:
 
 - Export is optional. The local bundle and course memory are the source of truth.
-- Do not export private recordings, paid course PDFs, or screenshots unless rights allow it.
+- Do not export private recordings, restricted PDFs, or screenshots unless rights allow it.

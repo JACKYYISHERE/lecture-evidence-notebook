@@ -1,20 +1,20 @@
 # Lecture Evidence Notebook
 
-Local-first tooling for turning lecture recordings into evidence-linked study notes.
+Local-first tooling for turning recorded classes, workshops, talks, and tutorials into evidence-linked study notes.
 
 The goal is not to summarize a lecture blindly. The goal is to keep every useful note traceable to:
 
 - the official slide/PDF page,
 - the transcript timestamp,
-- the recording frame / professor annotation screenshot,
+- the recording frame / instructor annotation screenshot,
 - and a reusable example or exam trap.
 
 ## Why This Exists
 
-Many lectures have the important material split across different places:
+Many learning sessions have the important material split across different places:
 
 - slides show the formal rule,
-- the professor explains the logic orally,
+- the instructor explains the logic orally,
 - the recording shows handwritten annotations, arrows, circles, and examples,
 - the platform summary gives a topic map.
 
@@ -33,11 +33,11 @@ Commit this repository:
 Do **not** commit private or copyrighted course assets:
 
 - recordings,
-- Zoom transcripts,
+- platform transcripts,
 - slide PDFs,
-- screenshots containing course materials,
-- student/course identifiers,
-- paid course content.
+- screenshots containing copyrighted class or workshop materials,
+- learner/instructor/session identifiers,
+- paid or restricted educational content.
 
 The `.gitignore` is set up to keep real lecture bundles and media out of Git.
 
@@ -82,24 +82,24 @@ Create a local bundle:
 
 ```bash
 python3 scripts/init_bundle.py \
-  --course "HK Tax" \
-  --lecture "2026-06-17-profit-tax-pa" \
+  --course "Example Course" \
+  --lecture "2026-06-17-session-01" \
   --out ./local_bundles
 ```
 
-Convert a Zoom VTT transcript:
+Convert a WebVTT transcript:
 
 ```bash
 python3 scripts/vtt_to_markdown.py \
-  ./local_bundles/2026-06-17-profit-tax-pa/transcript.vtt \
-  --out-dir ./local_bundles/2026-06-17-profit-tax-pa
+  ./local_bundles/2026-06-17-session-01/transcript.vtt \
+  --out-dir ./local_bundles/2026-06-17-session-01
 ```
 
 Serve a bundle so Chrome can seek long MP4 recordings:
 
 ```bash
 python3 scripts/range_server.py \
-  ./local_bundles/2026-06-17-profit-tax-pa \
+  ./local_bundles/2026-06-17-session-01 \
   --port 8766
 ```
 
@@ -134,17 +134,17 @@ Memory:
 Question:
 
 ```text
-I have a screenshot of the Interest Income slide. Find the classroom note.
+I have a screenshot of a formula slide. Find the classroom note.
 ```
 
 Expected process:
 
 ```text
-Interest Income
-→ smart chapter: Interest Income Exemption Process
-→ transcript around 04:08:20 - 04:33:24
-→ screenshot frame around 04:29:50
-→ note explains #1 receiver, #2 HK source, #3 exemption, security + interest expense restriction
+formula keywords
+→ smart chapter: relevant topic range
+→ transcript around the matching explanation
+→ screenshot frame around the annotated moment
+→ note explains the slide rule, instructor annotation, worked example, and common trap
 ```
 
 ## Tooling Philosophy

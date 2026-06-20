@@ -26,8 +26,8 @@ def copy_template(src: Path, dst: Path) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Create a local lecture evidence bundle.")
-    parser.add_argument("--course", required=True, help="Course name.")
-    parser.add_argument("--lecture", required=True, help="Lecture name or slug.")
+    parser.add_argument("--course", required=True, help="Course, subject, or project name.")
+    parser.add_argument("--lecture", required=True, help="Session name or slug.")
     parser.add_argument("--out", default="local_bundles", help="Output parent directory.")
     parser.add_argument("--source-url", default="", help="Optional source recording URL.")
     parser.add_argument("--lecture-date", default="", help="Optional lecture date.")
@@ -46,7 +46,7 @@ def main() -> int:
         "source_url": args.source_url,
         "created_at": datetime.now(timezone.utc).isoformat(),
         "duration": "",
-        "notes": "Keep private media and course materials local. Do not commit this bundle unless rights allow it.",
+        "notes": "Keep private media and restricted learning materials local. Do not commit this bundle unless rights allow it.",
         "files": {
             "recording": "recording.mp4",
             "audio": "recording_audio.m4a",
@@ -72,4 +72,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

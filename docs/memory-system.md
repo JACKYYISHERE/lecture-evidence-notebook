@@ -50,7 +50,7 @@ Every screenshot should have:
 - recording timestamp,
 - slide/page reference,
 - transcript cue,
-- what the professor wrote,
+- what the instructor wrote,
 - what it means,
 - examples that use it.
 
@@ -80,7 +80,7 @@ Use for exam risk.
 Store:
 
 - trap,
-- why students get it wrong,
+- why learners get it wrong,
 - correct handling,
 - evidence.
 
@@ -99,8 +99,7 @@ Store:
 Use exact search before loading large files:
 
 ```bash
-rg -n "interest income exemption|A Limited|security" course_memory/ local_bundles/*/transcript.md
+rg -n "keyword one|keyword two|example name" course_memory/ local_bundles/*/transcript.md
 ```
 
 Then load only the matching topic/example/screenshot sections.
-

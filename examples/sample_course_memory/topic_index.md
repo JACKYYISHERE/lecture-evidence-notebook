@@ -1,13 +1,12 @@
 # Topic Index
 
-## Interest income exemption
+## Free-body diagrams
 
-- Lecture: sample-profit-tax
-- Smart chapter: Interest Income Exemption Process
-- Recording range: 04:08:20 - 04:33:24
-- Slides: slides.pdf page 26
+- Lecture: sample-newton-laws
+- Smart chapter: Inclined Plane Force Analysis
+- Recording range: 04:20:00 - 04:35:00
+- Slides: slides.pdf page 12
 - Transcript: transcript.md around 04:29:50
-- Examples: sample-interest-income-bank-deposit
-- Related topics: interest expense deduction, source of interest income
+- Examples: sample-physics-free-body-diagram
+- Related topics: Newton's second law, friction, vector components
 - Status: sample only, no copyrighted course content
-

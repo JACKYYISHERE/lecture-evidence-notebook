@@ -1,0 +1,28 @@
+{
+  "examples": [
+    {
+      "id": "sample-interest-income-bank-deposit",
+      "course": "Sample Tax Course",
+      "lecture": "sample-profit-tax",
+      "topic": "Interest income exemption",
+      "identity": "Company A places a deposit with a Hong Kong bank and receives interest income.",
+      "recording_time": "04:29:50",
+      "recording_range": "04:08:20 - 04:33:24",
+      "screenshot": "frames/interest_income/042950_company_a_bank_deposit.png",
+      "slide_ref": "slides.pdf page 26",
+      "transcript_ref": "transcript.md around 04:29:50",
+      "smart_chapter": "Interest Income Exemption Process",
+      "rules": [
+        "Identify the receiver / charging provision",
+        "Apply source test",
+        "Apply deposit interest exemption"
+      ],
+      "professor_annotation": "#1 receiver; #2 source; #3 exemption; security plus deductible interest expense may block exemption.",
+      "exam_answer": "Interest from a deposit placed with a Hong Kong financial institution is normally exempt, unless a restriction applies.",
+      "trap": "If the deposit is pledged as security and the related interest expense is deductible, exemption may not apply.",
+      "memory": "Receiver -> source -> exemption; security + deductible interest expense blocks the win-win.",
+      "related_topics": ["interest expense deduction", "source of interest income"]
+    }
+  ]
+}
+

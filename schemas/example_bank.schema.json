@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lecture Evidence Example Bank",
+  "type": "object",
+  "required": ["examples"],
+  "properties": {
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "course", "topic", "identity", "recording_time", "screenshot", "rules"],
+        "properties": {
+          "id": { "type": "string" },
+          "course": { "type": "string" },
+          "lecture": { "type": "string" },
+          "topic": { "type": "string" },
+          "identity": { "type": "string" },
+          "recording_time": { "type": "string" },
+          "recording_range": { "type": "string" },
+          "screenshot": { "type": "string" },
+          "slide_ref": { "type": "string" },
+          "transcript_ref": { "type": "string" },
+          "smart_chapter": { "type": "string" },
+          "rules": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "professor_annotation": { "type": "string" },
+          "exam_answer": { "type": "string" },
+          "trap": { "type": "string" },
+          "memory": { "type": "string" },
+          "related_topics": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}
+

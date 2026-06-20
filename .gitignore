@@ -1,0 +1,46 @@
+# macOS / editor
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+
+# Local lecture bundles and private course assets
+local_bundles/
+lecture_bundles/
+course_bundles/
+transcripts/
+zoom_frames/
+frames/
+recordings/
+
+# Media and private learning artifacts
+*.mp4
+*.m4a
+*.mp3
+*.mov
+*.mkv
+*.webm
+*.vtt
+*.srt
+*.docx
+*.pdf
+*.ppt
+*.pptx
+*.key
+
+# Generated notes that may contain private course content
+*_transcript.md
+*_transcript.txt
+annotation_notes.md
+screenshot_index.md
+smart_summary.md
+smart_chapters.json
+
+# Keep template placeholders
+!templates/**/*.md
+!templates/**/*.json
+!examples/**/*.md
+!examples/**/*.json
+

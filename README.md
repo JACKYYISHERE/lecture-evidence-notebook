@@ -161,5 +161,4 @@ Interest Income
 - [Component requirements](docs/components.md)
 - [Workflow](docs/workflow.md)
 - [Memory system](docs/memory-system.md)
-- [NotebookLM integration](docs/notebooklm.md)
 - [GitHub publishing notes](docs/github-notes.md)

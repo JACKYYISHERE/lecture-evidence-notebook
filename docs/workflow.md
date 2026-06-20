@@ -84,7 +84,7 @@ Update:
 - `screenshot_index.md`,
 - `quiz_traps.md`.
 
-## D. Export To NotebookLM
+## D. Export Clean Evidence Notes
 
 Export only cleaned documents:
 
@@ -103,4 +103,3 @@ Avoid uploading:
 - full private recordings,
 - paid course PDFs without permission,
 - raw transcripts if they contain private student names or sensitive discussion.
-

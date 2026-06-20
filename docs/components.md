@@ -124,9 +124,9 @@ Required output:
 - trap,
 - memory line.
 
-## 8. NotebookLM Exporter
+## 8. Evidence Exporter
 
-Purpose: export cleaned evidence notes to external study tools.
+Purpose: export cleaned evidence notes for backup, sharing, or use in any external study tool.
 
 Required:
 
@@ -136,6 +136,5 @@ Required:
 
 Important:
 
-- NotebookLM is good for document Q&A and study guides.
-- It does not replace the local frame extraction workflow.
-
+- Export is optional. The local bundle and course memory are the source of truth.
+- Do not export private recordings, paid course PDFs, or screenshots unless rights allow it.

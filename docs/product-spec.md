@@ -21,7 +21,7 @@ A local-first study tool that syncs lecture recordings, transcripts, slides, and
 2. As a student, I can search a topic and find the matching recording timestamp.
 3. As a student, I can send a slide screenshot and recover the professor's classroom notes.
 4. As a student, I can save a classroom example into memory and reuse it later.
-5. As a student, I can export cleaned notes to NotebookLM or another study tool.
+5. As a student, I can export cleaned evidence notes for backup or external review.
 
 ## MVP Scope
 
@@ -39,7 +39,7 @@ Should have next:
 - screenshot capture helper,
 - transcript snippet extractor by timestamp,
 - topic-to-chapter matcher,
-- NotebookLM export folder generator.
+- cleaned evidence export folder generator.
 
 Could have later:
 
@@ -85,5 +85,4 @@ Optional:
 - `ffmpeg` for direct frame extraction,
 - OpenCLI or another browser automation layer,
 - OCR tool for image-like PDFs/slides,
-- NotebookLM for long-term Q&A.
-
+- optional external study tools for review, if useful.
